@@ -45,6 +45,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'moonshine/moonshine' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'MoonShine\\Laravel\\Providers\\MoonShineServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 

@@ -53,9 +53,10 @@
       22 => 'Illuminate\\View\\ViewServiceProvider',
       23 => 'App\\Providers\\AppServiceProvider',
       24 => 'App\\Providers\\FortifyServiceProvider',
-      25 => 'Illuminate\\Filesystem\\FilesystemServiceProvider',
+      25 => 'App\\Providers\\MoonShineServiceProvider',
       26 => 'Illuminate\\Cache\\CacheServiceProvider',
       27 => 'Illuminate\\Database\\DatabaseServiceProvider',
+      28 => 'Illuminate\\Filesystem\\FilesystemServiceProvider',
     ),
     'aliases' => 
     array (
@@ -125,6 +126,11 @@
         'driver' => 'sanctum',
         'provider' => NULL,
       ),
+      'moonshine' => 
+      array (
+        'driver' => 'session',
+        'provider' => 'moonshine',
+      ),
     ),
     'providers' => 
     array (
@@ -132,6 +138,11 @@
       array (
         'driver' => 'eloquent',
         'model' => 'App\\Models\\User',
+      ),
+      'moonshine' => 
+      array (
+        'driver' => 'eloquent',
+        'model' => 'MoonShine\\Laravel\\Models\\MoonshineUser',
       ),
     ),
     'passwords' => 
@@ -552,7 +563,7 @@
     'username' => 'email',
     'email' => 'email',
     'views' => true,
-    'home' => '/home',
+    'home' => '/',
     'prefix' => '',
     'domain' => NULL,
     'lowercase_usernames' => true,
@@ -613,9 +624,10 @@
     array (
       0 => 'registration',
       1 => 'reset-passwords',
-      2 => 'update-profile-information',
-      3 => 'update-passwords',
-      4 => 'two-factor-authentication',
+      2 => 'email-verification',
+      3 => 'update-profile-information',
+      4 => 'update-passwords',
+      5 => 'two-factor-authentication',
     ),
   ),
   'logging' => 
@@ -792,6 +804,74 @@
       array (
         0 => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\resources\\views/vendor/mail',
       ),
+    ),
+  ),
+  'moonshine' => 
+  array (
+    'title' => 'MoonShine',
+    'logo' => 'vendor/moonshine/logo.svg',
+    'logo_small' => 'vendor/moonshine/logo-small.svg',
+    'use_migrations' => true,
+    'use_notifications' => true,
+    'use_database_notifications' => true,
+    'use_routes' => true,
+    'use_profile' => true,
+    'domain' => NULL,
+    'prefix' => 'admin',
+    'page_prefix' => 'page',
+    'resource_prefix' => 'resource',
+    'home_route' => 'moonshine.index',
+    'not_found_exception' => 'MoonShine\\Laravel\\Exceptions\\MoonShineNotFoundException',
+    'middleware' => 
+    array (
+      0 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
+      1 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
+      2 => 'Illuminate\\Session\\Middleware\\StartSession',
+      3 => 'Illuminate\\Session\\Middleware\\AuthenticateSession',
+      4 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
+      5 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
+      6 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
+      7 => 'MoonShine\\Laravel\\Http\\Middleware\\ChangeLocale',
+    ),
+    'disk' => 'public',
+    'disk_options' => 
+    array (
+    ),
+    'cache' => 'file',
+    'auth' => 
+    array (
+      'enabled' => true,
+      'guard' => 'moonshine',
+      'model' => 'MoonShine\\Laravel\\Models\\MoonshineUser',
+      'middleware' => 'MoonShine\\Laravel\\Http\\Middleware\\Authenticate',
+      'pipelines' => 
+      array (
+      ),
+    ),
+    'user_fields' => 
+    array (
+      'username' => 'email',
+      'password' => 'password',
+      'name' => 'name',
+      'avatar' => 'avatar',
+    ),
+    'layout' => 'App\\MoonShine\\Layouts\\MoonShineLayout',
+    'forms' => 
+    array (
+      'login' => 'MoonShine\\Laravel\\Forms\\LoginForm',
+      'filters' => 'MoonShine\\Laravel\\Forms\\FiltersForm',
+    ),
+    'pages' => 
+    array (
+      'dashboard' => 'App\\MoonShine\\Pages\\Dashboard',
+      'profile' => 'MoonShine\\Laravel\\Pages\\ProfilePage',
+      'login' => 'MoonShine\\Laravel\\Pages\\LoginPage',
+      'error' => 'MoonShine\\Laravel\\Pages\\ErrorPage',
+    ),
+    'locale' => 'en',
+    'locale_key' => '_lang',
+    'locales' => 
+    array (
     ),
   ),
   'permission' => 

@@ -15,41 +15,39 @@ use Laravel\Fortify\Fortify;
 
 class FortifyServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
         //
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
+        // Аутентификация
         Fortify::loginView(function () {
             return view('auth.login');
         });
 
+        // Регистрация (раскомментируйте если нужна)
+        Fortify::registerView(function () {
+            return view('auth.register');
+        });
 
-//        Fortify::registerView(function () {
-//            return view('auth.register');
-//        });
-//
-//        Fortify::requestPasswordResetLinkView(function () {
-//            return view('auth.forgot-password');
-//        });
-//
-//        Fortify::resetPasswordView(function () {
-//            return view('auth.reset-password');
-//        });
+        // Восстановление пароля
+        Fortify::requestPasswordResetLinkView(function () {
+            return view('auth.forgot-password');
+        });
 
+        Fortify::resetPasswordView(function ($request) {
+            return view('auth.reset-password', ['request' => $request]);
+        });
+
+        // Действия
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
 
+        // Лимитеры
         RateLimiter::for('login', function (Request $request) {
             $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())).'|'.$request->ip());
 
