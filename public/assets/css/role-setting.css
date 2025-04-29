@@ -1,0 +1,9 @@
+body {
+    background: url(../images/role_setting_background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
