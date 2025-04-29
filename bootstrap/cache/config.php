@@ -178,8 +178,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/cache/data',
-        'lock_path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/cache/data',
+        'lock_path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -358,7 +358,7 @@
       'enabled' => true,
       'open' => NULL,
       'driver' => 'file',
-      'path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\debugbar',
+      'path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\debugbar',
       'connection' => NULL,
       'provider' => '',
       'hostname' => '127.0.0.1',
@@ -510,7 +510,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\app/private',
+        'root' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -518,7 +518,7 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\app/public',
+        'root' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -540,7 +540,7 @@
     ),
     'links' => 
     array (
-      'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\public\\storage' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\app/public',
+      'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\public\\storage' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\app/public',
     ),
   ),
   'fortify-options' => 
@@ -652,14 +652,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -724,7 +724,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -802,7 +802,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -1007,7 +1007,7 @@
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -1134,9 +1134,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\resources\\views',
+      0 => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\framework\\views',
+    'compiled' => 'C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\framework\\views',
   ),
   'sanctum' => 
   array (
