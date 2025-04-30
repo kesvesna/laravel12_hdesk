@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a7b53b4fb092370ed7e0726ba45a01d",
+    "content-hash": "0be8373cb5fbf3c00a9c3cb128887e64",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2547,6 +2547,71 @@
                 }
             ],
             "time": "2025-04-23T08:44:28+00:00"
+        },
+        {
+            "name": "moonshine/scout",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moonshine-software/scout.git",
+                "reference": "7b76845e6be6a42a5f84d355f002dc3869abea88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moonshine-software/scout/zipball/7b76845e6be6a42a5f84d355f002dc3869abea88",
+                "reference": "7b76845e6be6a42a5f84d355f002dc3869abea88",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "^8.2|^8.3"
+            },
+            "conflict": {
+                "laravel/framework": "<10.48.0",
+                "moonshine/moonshine": "<3.0"
+            },
+            "suggest": {
+                "laravel/scout": "Required to use the Scout"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MoonShine\\Scout\\Providers\\ScoutServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MoonShine\\Scout\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danil Shutsky",
+                    "email": "info@cutcode.ru",
+                    "homepage": "https://cutcode.dev"
+                }
+            ],
+            "description": "Scout support for MoonShine",
+            "homepage": "https://moonshine-laravel.com",
+            "keywords": [
+                "admin",
+                "dashboard",
+                "laravel",
+                "moonshine",
+                "scout"
+            ],
+            "support": {
+                "issues": "https://github.com/moonshine-software/scout/issues",
+                "source": "https://github.com/moonshine-software/scout"
+            },
+            "time": "2025-04-11T08:29:00+00:00"
         },
         {
             "name": "nesbot/carbon",

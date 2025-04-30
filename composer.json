@@ -12,6 +12,7 @@
         "laravel/sanctum": "^4.1",
         "laravel/tinker": "^2.10.1",
         "moonshine/moonshine": "^3.11",
+        "moonshine/scout": "^1.0",
         "predis/predis": "*",
         "spatie/laravel-permission": "^6.17"
     },
