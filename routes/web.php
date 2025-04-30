@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\Dashboard\DashboardController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
@@ -18,8 +19,6 @@ Route::middleware(['auth'])->group(function () {
         return redirect('/');
     });
 
-    Route::get('/', function () {
-        return view('welcome');
-    });
-
+    Route::get('/', [DashboardController::class, 'index'])
+        ->name('index');
 });

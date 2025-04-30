@@ -1,0 +1,78 @@
+@extends('layouts.backend.main')
+
+@section('title', 'Главная | Арендаторы')
+
+@section('content')
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <h4 class="d-inline-block me-3">Арендаторы</h4>
+                        @if(auth()->user()->can('create'))
+                            <a href="{{route('renters.create')}}"><img
+                                    src="{{asset('assets/images/backend/svg/plus-circle.svg')}}" alt="Add"
+                                    title="Добавить" height="30"></a>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            <div class="profile-foreground position-relative"
+                 style="
+                        margin-top: -1.5rem !important;
+                        margin-right: -1.5rem !important;
+                        margin-left: -1.5rem !important;
+                     ">
+                <div class="profile-wid-bg">
+                    {{--                        <img src="{{asset('assets/images/profile-bg.jpg')}}" alt="" class="profile-wid-img" />--}}
+                </div>
+
+                <div class="pt-4 mb-lg-3 pb-lg-4 px-4">
+                    <div class="col">
+                        @include('components.backend.message')
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <table class="table table-striped table-hover shadow">
+                                        <thead>
+                                        <tr>
+                                            <th>Город</th>
+                                            <th>Юр. лицо</th>
+                                            <th>ФИО</th>
+                                            <th>Телефон</th>
+                                            <th>Почта</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody style="cursor: pointer;">
+                                        @forelse($renters as $renter)
+                                            @if(auth()->user()->can('read'))
+                                                <tr onclick="window.location='{{ route('renters.show', $renter->id) }}';">
+                                            @else
+                                                <tr>
+                                                    @endif
+                                                    <td>{{$renter->town->name}}</td>
+                                                    <td>{{$renter->organization->name}}</td>
+                                                    <td>{{$renter->name}}</td>
+                                                    <td>{{$renter->phone}}</td>
+                                                    <td>{{$renter->email}}</td>
+                                                </tr>
+                                                @empty
+                                                    <tr>
+                                                        <td colspan="5">нет данных ...</td>
+                                                    </tr>
+                                                @endforelse
+                                        </tbody>
+                                    </table>
+                                    {{$renters->withQueryString()->links()}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- profile init js -->
+        <script src="{{asset('assets/js/pages/profile.init.js')}}"></script>
+@endsection

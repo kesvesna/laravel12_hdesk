@@ -518,7 +518,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ywUJi9BVgau3C0d6',
+            '_route' => 'generated::L2INgcPNxy5bMLH0',
           ),
           1 => NULL,
           2 => 
@@ -669,13 +669,148 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/search' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'moonshine.global-search',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/register' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::7JTOxgntdDqRdp9M',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/login' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::M7tPm9kSQp6Izmkd',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/logout' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::7mq1gzkrkOORl6wg',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/user' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::J9hTOzUdQMcuAbN1',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/forgot-password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::cIPzHJAz9vtA8PgA',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/reset-password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::t7HHaRmdH2jjFCa5',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/up' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::myhgeHaFl2muak2L',
+            '_route' => 'generated::O5c1EXpM66lh58ZR',
           ),
           1 => NULL,
           2 => 
@@ -695,7 +830,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AQUS0kr8zzJX7yl4',
+            '_route' => 'generated::4Oph1TA1aOFtAoHu',
           ),
           1 => NULL,
           2 => 
@@ -715,7 +850,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2IxkMMd81AYaFnUv',
+            '_route' => 'generated::LSyrJ1f81QtyO6Dt',
           ),
           1 => NULL,
           2 => 
@@ -735,7 +870,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TepZoWIyNVTZmSJ4',
+            '_route' => 'index',
           ),
           1 => NULL,
           2 => 
@@ -2597,7 +2732,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ywUJi9BVgau3C0d6' => 
+    'generated::L2INgcPNxy5bMLH0' => 
     array (
       'methods' => 
       array (
@@ -2620,7 +2755,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ywUJi9BVgau3C0d6',
+        'as' => 'generated::L2INgcPNxy5bMLH0',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3664,7 +3799,7 @@ app('router')->setCompiledRoutes(
         'middleware' => 'moonshine',
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:61:"static function (): never {
             \\oops404();
-        }";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000004350000000000000000";}}',
+        }";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000004410000000000000000";}}',
         'as' => 'moonshine.',
         'namespace' => NULL,
         'prefix' => 'admin',
@@ -3687,36 +3822,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::myhgeHaFl2muak2L' => 
+    'moonshine.global-search' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'up',
+      'uri' => 'admin/search',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:875:"function () {
-                    $exception = null;
-
-                    try {
-                        \\Illuminate\\Support\\Facades\\Event::dispatch(new \\Illuminate\\Foundation\\Events\\DiagnosingHealth);
-                    } catch (\\Throwable $e) {
-                        if (app()->hasDebugModeEnabled()) {
-                            throw $e;
-                        }
-
-                        report($e);
-
-                        $exception = $e->getMessage();
-                    }
-
-                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\unknown14\\\\Desktop\\\\projects\\\\laravel12_hdesk\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
-                        \'exception\' => $exception,
-                    ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004ac0000000000000000";}}',
-        'as' => 'generated::myhgeHaFl2muak2L',
+        'middleware' => 
+        array (
+          0 => 'moonshine',
+          1 => 'MoonShine\\Laravel\\Http\\Middleware\\Authenticate',
+        ),
+        'uses' => 'MoonShine\\Scout\\Http\\Controllers\\GlobalSearchController@__invoke',
+        'controller' => 'MoonShine\\Scout\\Http\\Controllers\\GlobalSearchController',
+        'as' => 'moonshine.global-search',
+        'namespace' => NULL,
+        'prefix' => 'admin',
+        'where' => 
+        array (
+        ),
       ),
       'fallback' => false,
       'defaults' => 
@@ -3732,7 +3860,300 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AQUS0kr8zzJX7yl4' => 
+    'generated::7JTOxgntdDqRdp9M' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/register',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@register',
+        'controller' => 'App\\Http\\Controllers\\AuthController@register',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::7JTOxgntdDqRdp9M',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::M7tPm9kSQp6Izmkd' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/login',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@login',
+        'controller' => 'App\\Http\\Controllers\\AuthController@login',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::M7tPm9kSQp6Izmkd',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::7mq1gzkrkOORl6wg' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/logout',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@logout',
+        'controller' => 'App\\Http\\Controllers\\AuthController@logout',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::7mq1gzkrkOORl6wg',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::J9hTOzUdQMcuAbN1' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/user',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@user',
+        'controller' => 'App\\Http\\Controllers\\AuthController@user',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::J9hTOzUdQMcuAbN1',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::cIPzHJAz9vtA8PgA' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/forgot-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:352:"function (\\Request $request) {
+$request->validate([\'email\' => \'required|email\']);
+
+$status = \\Illuminate\\Support\\Facades\\Password::sendResetLink(
+$request->only(\'email\')
+);
+
+return $status === \\Illuminate\\Support\\Facades\\Password::RESET_LINK_SENT
+? \\response()->json([\'message\' => \\__($status)])
+: \\response()->json([\'message\' => \\__($status)], 400);
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004be0000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::cIPzHJAz9vtA8PgA',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::t7HHaRmdH2jjFCa5' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/reset-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:644:"function (\\Request $request) {
+$request->validate([
+\'token\' => \'required\',
+\'email\' => \'required|email\',
+\'password\' => \'required|confirmed|min:8\',
+]);
+
+$status = \\Illuminate\\Support\\Facades\\Password::reset(
+$request->only(\'email\', \'password\', \'password_confirmation\', \'token\'),
+function ($user, $password) {
+$user->forceFill([
+\'password\' => \\Illuminate\\Support\\Facades\\Hash::make($password)
+])->save();
+
+\\event(new \\Illuminate\\Auth\\Events\\PasswordReset($user));
+}
+);
+
+return $status === \\Illuminate\\Support\\Facades\\Password::PASSWORD_RESET
+? \\response()->json([\'message\' => \\__($status)])
+: \\response()->json([\'message\' => \\__($status)], 400);
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c20000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::t7HHaRmdH2jjFCa5',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::O5c1EXpM66lh58ZR' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'up',
+      'action' => 
+      array (
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:860:"function () {
+                    $exception = null;
+
+                    try {
+                        \\Illuminate\\Support\\Facades\\Event::dispatch(new \\Illuminate\\Foundation\\Events\\DiagnosingHealth);
+                    } catch (\\Throwable $e) {
+                        if (app()->hasDebugModeEnabled()) {
+                            throw $e;
+                        }
+
+                        report($e);
+
+                        $exception = $e->getMessage();
+                    }
+
+                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\unknown-asus\\\\Desktop\\\\projects\\\\laravel12_hdesk\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
+                        \'exception\' => $exception,
+                    ]), status: $exception ? 500 : 200);
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004ba0000000000000000";}}',
+        'as' => 'generated::O5c1EXpM66lh58ZR',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::4Oph1TA1aOFtAoHu' => 
     array (
       'methods' => 
       array (
@@ -3749,13 +4170,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:50:"function () {
         return \\redirect(\'/\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004b00000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::AQUS0kr8zzJX7yl4',
+        'as' => 'generated::4Oph1TA1aOFtAoHu',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3771,7 +4192,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2IxkMMd81AYaFnUv' => 
+    'generated::LSyrJ1f81QtyO6Dt' => 
     array (
       'methods' => 
       array (
@@ -3788,13 +4209,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:50:"function () {
         return \\redirect(\'/\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004b20000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::2IxkMMd81AYaFnUv',
+        'as' => 'generated::LSyrJ1f81QtyO6Dt',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3810,7 +4231,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TepZoWIyNVTZmSJ4' => 
+    'index' => 
     array (
       'methods' => 
       array (
@@ -3825,15 +4246,14 @@ app('router')->setCompiledRoutes(
           0 => 'web',
           1 => 'auth',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:52:"function () {
-        return \\view(\'welcome\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004b40000000000000000";}}',
+        'uses' => 'App\\Http\\Controllers\\Backend\\Dashboard\\DashboardController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\Dashboard\\DashboardController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::TepZoWIyNVTZmSJ4',
+        'as' => 'index',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3859,13 +4279,13 @@ app('router')->setCompiledRoutes(
       'uri' => 'storage/{path}',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:71:"C:\\Users\\unknown14\\Desktop\\projects\\laravel12_hdesk\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:329:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:74:"C:\\Users\\unknown-asus\\Desktop\\projects\\laravel12_hdesk\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:323:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
                     return (new \\Illuminate\\Filesystem\\ServeFile(
                         $disk,
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000004030000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000040f0000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,

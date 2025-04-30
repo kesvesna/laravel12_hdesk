@@ -52,6 +52,13 @@
       0 => 'MoonShine\\Laravel\\Providers\\MoonShineServiceProvider',
     ),
   ),
+  'moonshine/scout' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'MoonShine\\Scout\\Providers\\ScoutServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 

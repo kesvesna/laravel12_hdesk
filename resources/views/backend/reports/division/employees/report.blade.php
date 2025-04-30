@@ -1,0 +1,198 @@
+@extends('layouts.backend.main')
+
+@section('title', 'Главная | Отчеты по сотрудникам')
+
+@section('content')
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <h4 class="d-inline-block me-3">Отчет по сотрудникам</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-foreground position-relative"
+                 style="
+                        margin-top: -1.5rem !important;
+                        margin-right: -1.5rem !important;
+                        margin-left: -1.5rem !important;
+                     ">
+                <div class="profile-wid-bg">
+                    {{--                        <img src="{{asset('assets/images/profile-bg.jpg')}}" alt="" class="profile-wid-img" />--}}
+                </div>
+
+                <div class="pt-4 mb-lg-3 pb-lg-4 px-4">
+                    <div class="col">
+                        @include('components.backend.message')
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            <h6 class="text-center">{{'С ' . $start_date . ' по ' . $finish_date}}</h6>
+                                            <p class="text-center text-danger">Ось Х: {{$axis_x_type}}</p>
+                                        </div>
+                                    </div>
+                                    @if(1)
+                                    <div class="row row-cols-1 row-cols-md-2">
+                                        <div class="col-12 col-md-6 text-center mb-4">
+                                            <div class="chart-container pe-4" style="height:75vh; width:80vw">
+                                                <canvas id="totalReport"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 text-center mb-4">
+                                        </div>
+                                    </div>
+                                    @else
+                                        <div class="row row-cols-1 mb-4 mt-3">
+                                            <div class="col text-center">
+                                                <h6>Нет АВР, заявок, ремонта ...</h6>
+                                            </div>
+                                        </div>
+                                    @endif
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a href="javascript:history.back()"
+                                               class="btn btn-sm btn-outline-success col-4 col-md-2 rounded me-2"><img
+                                                    src="{{asset('assets/images/backend/svg/skip-backward.svg')}}" alt="back"
+                                                    title="Назад"></a>
+{{--                                            <form action="" method="post">--}}
+{{--                                                @csrf--}}
+{{--                                                @method('post')--}}
+{{--                                                <button type="submit" class="btn btn-sm btn-outline-success col-4 col-md-2"><img--}}
+{{--                                                        src="{{asset('assets/images/backend/svg/printer.svg')}}" alt="delete"--}}
+{{--                                                        title="На печать"></button>--}}
+{{--                                            </form>--}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- profile init js -->
+        <script src="{{asset('assets/js/pages/profile.init.js')}}"></script>
+        <script src="{{asset('assets/js/chart.js')}}"></script>
+    <script>
+
+        const users = @json($division_report['user_names']);
+
+        const start_date = @json($start_date);
+        const finish_date = @json($finish_date);
+
+        const avrs_count = @json($division_report['avrs_count']);
+        const closed_applications_count = @json($division_report['closed_applications_count']);
+        const closed_repairs_count = @json($division_report['closed_repairs_count']);
+        const period_works_count = @json($division_report['period_works_count']);
+        const checklists_count = @json($division_report['checklists_count']);
+        const counters_count = @json($division_report['counters_count']);
+
+        const axis_x_type = @json($axis_x_type);
+
+        const data = {
+            labels: users,
+            datasets: [
+                {
+                    label: 'АВР',
+                    data: avrs_count,
+                    borderColor: 'rgb(255, 102, 102)',
+                    backgroundColor: 'rgba(255, 102, 102, 0.3)',
+                    borderWidth: 1,
+                },
+                {
+                    label: 'Заявки закрытые',
+                    data: closed_applications_count,
+                    borderColor: 'rgb(255, 178, 102)',
+                    backgroundColor: 'rgba(255, 178, 102, 0.3)',
+                    borderWidth: 1,
+                },
+                {
+                    label: 'Ремонт',
+                    data: closed_repairs_count,
+                    borderColor: 'rgb(204, 204, 0)',
+                    backgroundColor: 'rgba(204, 204, 0, 0.3)',
+                    borderWidth: 1,
+                },
+                {
+                    label: 'Тех.мероприятия',
+                    data: period_works_count,
+                    borderColor: 'rgb(102, 204, 0)',
+                    backgroundColor: 'rgba(102, 204, 0, 0.3)',
+                    borderWidth: 1,
+                },
+                {
+                    label: 'Чеклисты',
+                    data: checklists_count,
+                    borderColor: 'rgb(0, 255, 255)',
+                    backgroundColor: 'rgba(0, 255, 255, 0.3)',
+                    borderWidth: 1,
+                },
+                {
+                    label: 'Показания счетчиков',
+                    data: counters_count,
+                    borderColor: 'rgb(0, 128, 255)',
+                    backgroundColor: 'rgba(0, 128, 255, 0.3)',
+                    borderWidth: 1,
+                }
+            ]
+        };
+
+        let totalReport = document.getElementById('totalReport');
+
+        new Chart(totalReport, {
+            type: 'bar',
+            data: data,
+            options: {
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                elements: {
+                    bar: {
+                        borderWidth: 2,
+                    }
+                },
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: false,
+                        text: 'Chart.js Horizontal Bar Chart'
+                    }
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        type: axis_x_type,
+                    },
+                    y: {
+                        display: true,
+                    }
+                }
+                // scales: {
+                //     x: {
+                //         ticks: {
+                //             font: {
+                //                 size: 16,
+                //             }
+                //         }
+                //     },
+                //     y: {
+                //         ticks: {
+                //             font: {
+                //                 size: 16,
+                //             }
+                //         }
+                //     }
+                // }
+            },
+        });
+
+    </script>
+@endsection
